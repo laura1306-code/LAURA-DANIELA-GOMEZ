@@ -1,0 +1,59 @@
+Una persona desea comprar boletas para asistir a un concierto.
+
+Cuando un cliente quiere realizar la compra, se deben seguir los siguientes pasos:
+
+1. Verificar la edad del cliente
+
+Si es menor de 18 años, no puede comprar la boleta.
+Si es mayor de 18 años, puede comprar la boleta.
+
+2. Permitir escoger la zona de ubicación
+
+GENERAL: acceso a graderías.
+PREFERENCIAL: incluye silla y está más cerca del escenario.
+VIP: interacción con el artista y acceso a un círculo privado con sillas y mesas para seis personas.
+
+3. Calcular el total a pagar
+
+Multiplicar la tarifa de la zona elegida por el número total de boletas compradas.
+
+4. Entregar un resumen final al cliente
+
+Indicar si es mayor de edad.
+Mostrar la zona de ubicación y el número de boletas.
+Presentar el total a pagar.
+
+1. Definir entradas y salidas
+
+Entradas (inputs):
+
+-age (Number)
+-ubication (String): "GENERAL", "PREFERENCIAL" o "VIP"
+-tickets (Number)
+
+Salidas (outputs):
+
+Mensaje de bienvenida a Ticketmaster.
+Mensaje según la edad (permiso).
+Zona escogida.
+Total a pagar 
+
+2. Reglas en términos de control de flujo
+
+Condicional (if/else):
+
+Si age < 18: mostrar "No puede comprar la boleta."
+Si age ≥ 18: mostrar "Puede comprar la boleta normalmente."
+
+Bucle (for/while):
+
+Calcular el total a pagar.
+
+Selección múltiple (switch):
+
+Determinar la tarifa de la boleta según la zona de ubicación:
+
+GENERAL: $450.000
+PREFERENCIAL: $700.000
+VIP: $1.200.000
+  
