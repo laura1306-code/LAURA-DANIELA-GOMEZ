@@ -1,0 +1,37 @@
+### Obtener todo waiters
+GET http://localhost:3000/waiters
+
+### Obtener un ingredients por query params
+GET http://localhost:3000/waiters?shift=Noche
+
+
+### Obtener ingrediente por id
+GET http://localhost:3000/waiters/2
+
+
+
+### Crear 
+
+POST http://localhost:3000/waiters
+Content-Type: application/json
+
+{
+  "name": "Laura Sánchez",
+  "shift": "Tarde",
+  "yearsExperience": 4
+}
+
+
+### Actualizar 
+PATCH http://localhost:3000/waiters/3
+Content-Type: application/json
+
+{
+  "shift": "Mañana",
+  "yearsExperience": 6
+}
+
+
+
+### Eliminar
+DELETE http://localhost:3000/waiters/1

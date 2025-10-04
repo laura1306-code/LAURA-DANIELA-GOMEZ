@@ -1,0 +1,26 @@
+### Obtener todo el menú
+GET http://localhost:3000/menu
+
+### Obtener un item específico
+GET http://localhost:3000/menu/1
+
+### Crear 
+POST http://localhost:3000/menu
+Content-Type: application/json
+
+{
+  "name": "Sushi",
+  "price": 25,
+  "category": "japanese"
+}
+
+### Actualizar un ítem
+PATCH http://localhost:3000/menu/2
+Content-Type: application/json
+
+{
+  "price": 18
+}
+
+### Eliminar un ítem
+DELETE http://localhost:3000/menu/3

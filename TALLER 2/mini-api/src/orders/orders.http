@@ -1,0 +1,39 @@
+### Obtener todo orders
+GET http://localhost:3000/orders
+
+### Obtener un ingredients por query params
+GET http://localhost:3000/orders?status=Pendiente
+
+
+### Obtener ingrediente por id
+GET http://localhost:3000/orders/1
+
+
+
+### Crear 
+
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "customer": "Pedro Martínez",
+  "total": 75,
+  "status": "Pendiente",
+  "items": ["Pizza Margarita", "Jugo de Naranja"],
+  "waiterId": 2
+}
+
+
+### Actualizar 
+PATCH http://localhost:3000/orders/3
+Content-Type: application/json
+
+{
+  "status": "Entregado",
+  "total": 85
+}
+
+
+
+### Eliminar
+DELETE http://localhost:3000/orders/1

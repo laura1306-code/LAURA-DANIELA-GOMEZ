@@ -1,0 +1,30 @@
+### Obtener todo ingredients
+GET http://localhost:3000/ingredients
+
+### Obtener un ingredients por query params
+GET http://localhost:3000/ingredients?name=Tomate
+
+### Obtener ingrediente por id
+GET http://localhost:3000/ingredients/2
+
+
+### Crear 
+POST http://localhost:3000/ingredients
+Content-Type: application/json
+
+{
+  "name": "Papa",
+  "supplier": "Abasto",
+  "stock": 5
+}
+
+### Actualizar un ingredients
+PATCH http://localhost:3000/ingredients/2
+Content-Type: application/json
+
+{
+  "price": 18
+}
+
+### Eliminar un ítem
+DELETE http://localhost:3000/ingredients/3
